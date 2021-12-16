@@ -18,7 +18,7 @@ export const dCandidate = (state = initialState, action) => {
                 list: [...state.list, action.payload]
             }
 
-        case ACTION_TYPES.UPDATE:
+        case ACTION_TYPES.UPDATE: 
             return {
                 ...state,
                 list: state.list.map(x => x.id == action.payload.id ? action.payload : x)
